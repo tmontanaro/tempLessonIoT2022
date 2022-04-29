@@ -12,6 +12,6 @@ if (!sensorLib.initialize(sensorType, sensorPin)) {
 setInterval(function() {
     var readout = sensorLib.read();
     
-    console.log('Temperature:', readout.temperature.toFixed(1) + 'C');
+    console.log('Temperature :', readout.temperature.toFixed(1) + 'C');
     console.log('Humidity:   ', readout.humidity.toFixed(1)    + '%');
 }, 2000);
